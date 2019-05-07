@@ -3,6 +3,8 @@
     open Microsoft.Quantum.Primitive;
     open Microsoft.Quantum.Canon;
     
+
+    // Q# Laguage features: operation, output value, variables, qubits usage, qubits gates H, M
     operation RandomQubit () : (Result)
     {        
         mutable res = Zero;
@@ -23,6 +25,7 @@
 
 
 
+    // Additional language features: argument, arrays, ranges (for loops)
     operation RandomGuid (count : Int) : (Result[])
     {                  
         mutable res = new Result[count];
@@ -44,7 +47,7 @@
     }
 
 
-
+    // Language feature: CNOT gate, entaglement
     operation BellState () : (Result, Result)
     {                  
         mutable res0 = Zero;
@@ -68,7 +71,7 @@
 
 
 
-
+    // Language feature: controlled operator sample
     operation ThreeOfFourState () : (Result, Result)
     {                  
         mutable res0 = Zero;
@@ -96,7 +99,7 @@
     }
 
 
-
+    // Language feature: gate controlled by Zero
     operation OneBitOfFour () : (Result, Result, Result, Result)
     {           
         // Schema: https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22,1,%22H%22],[%22%E2%80%A2%22,1,%22%E2%80%A2%22,%22X%22],[%22%E2%97%A6%22,%22X%22,%22%E2%97%A6%22],[%22X%22,1,%22X%22,%22%E2%80%A2%22]]}

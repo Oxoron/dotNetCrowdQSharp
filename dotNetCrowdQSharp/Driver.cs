@@ -10,6 +10,8 @@ namespace Quantum.dotNetCrowdQSharp
     {
         static void Main(string[] args)
         {
+            // (Un)comment sample methods to test operations over a quantum simulator.
+
             //TestRandomQubit();
             //TestRandomGuid();
             TestBellState();
